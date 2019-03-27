@@ -799,40 +799,40 @@
 
             
 
-            <form action="#" class="p-5 bg-white">
+            <form action="#" class="p-5 bg-white" id="contact-form">
              
 
-              <div class="row form-group">
+              <div class="row form-group control-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
+                  <input type="text" name="fname" id="fname" class="form-control">
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
+                  <input type="text" name="lname" id="lname" class="form-control">
                 </div>
               </div>
 
-              <div class="row form-group">
+              <div class="row form-group control-group">
                 
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
+                  <input type="email" name="email" id="email" class="form-control">
                 </div>
               </div>
 
-              <div class="row form-group">
+              <div class="row form-group control-group">
                 
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
+                  <input type="text" name="subject" id="subject" class="form-control">
                 </div>
               </div>
 
-              <div class="row form-group">
+              <div class="row form-group control-group">
                 <div class="col-md-12">
                   <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
+                  <textarea name="message" name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
                 </div>
               </div>
 
@@ -967,6 +967,7 @@
     }
     </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 		<!-- imagesLoaded jQuery plugin by @desandro : https://github.com/desandro/imagesloaded -->
 		<script src="js/jquery.imagesloaded.min.js"></script>
     <script src="js/cbpBGSlideshow.min.js"></script>
@@ -990,6 +991,41 @@
             evt.currentTarget.className += " active";
             
           }
+      </script>
+      <script>
+      $(document).ready(function () {
+        $('#contact-form').validate({
+            rules: {
+                fname: {
+                    minlength: 2,
+                    required: true
+                },
+                lname: {
+                    minlength: 2,
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    minlength: 2,
+                    required: true
+                },
+                message: {
+                    minlength: 2,
+                    required: true
+                }
+            },
+            highlight: function (element) {
+                $(element).closest('.control-group').removeClass('success').addClass('error');
+            },
+            success: function (element) {
+                //element.text('OK!').addClass('valid')
+                element.addClass('valid').closest('.control-group').removeClass('error').addClass('success');
+            }
+        });
+        });
       </script>
   </body>
 </html>

@@ -1448,3 +1448,13 @@ h1, h2, h3, h4, h5,
 .pad-top{
   padding-top:10px;
 }
+.success{
+  color: green;
+}
+
+.error{
+  color: red;
+}
+.valid{
+  /*color: green; */
+}
