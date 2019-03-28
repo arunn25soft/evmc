@@ -1458,3 +1458,6 @@ h1, h2, h3, h4, h5,
 .valid{
   /*color: green; */
 }
+.bg-white p a {
+  color: #4d4d4d;
+}
