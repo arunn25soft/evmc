@@ -293,13 +293,13 @@ h1, h2, h3, h4, h5,
     .site-navbar .site-navigation .site-menu a.active {
 
       /*color: #f16821;*/
-      color: #8dd8ff; 
+      color: #92C0E9; 
     }
     .text-primary{
-      color: #002be3 !important; 
+      color: #1A428A !important; 
     }
     h2 a {
-      color: #002be3; 
+      color: #1A428A; 
     }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
@@ -1245,7 +1245,7 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px; }
 
 .h-entry .meta {
-  color: #002ae3;
+  color: #1A428A;
   font-size: 14px; }
 
 .h-entry h2 {
@@ -1330,7 +1330,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     width: 80px;
     height: 3px;
-    background: #8dd8ff; }
+    background: #92C0E9; }
   .border-primary.text-center:after {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1341,7 +1341,7 @@ h1, h2, h3, h4, h5,
     -ms-transform: translateX(0%);
     transform: translateX(0%); }
     .btn-primary {
-      background-color: #8dd8ff !important;
+      background-color: #92C0E9 !important;
       border-color: #6ab5e0 !important;
   }
   
@@ -1494,11 +1494,11 @@ h1, h2, h3, h4, h5,
     z-index: 999;
 }
 .tab button.active{
-  background-color: #8dd8ff !important;
+  background-color: #92C0E9 !important;
   color:#fff !important;
 }
 .tab button:hover{
-  background-color: #8dd8ff !important;
+  background-color: #92C0E9 !important;
   color:#fff !important;
 }
 .text-block {
@@ -1511,7 +1511,7 @@ h1, h2, h3, h4, h5,
   padding-right: 20px; */
 }
 .social_icons{
-  color: #8dd8ff !important;
+  color: #92C0E9 !important;
 }
 .align-center{
   text-align: center;
