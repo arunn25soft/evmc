@@ -1525,3 +1525,7 @@ h1, h2, h3, h4, h5,
 .hgt-200{
   height: 200px;
 }
+.hyperlink{
+  color: #1A428A;
+  text-decoration: underline;
+}
